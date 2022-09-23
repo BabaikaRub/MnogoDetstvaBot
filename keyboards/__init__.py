@@ -1,0 +1,5 @@
+from keyboards.client_kb import inline_menu
+from keyboards.client_kb import offline_center_lst
+from keyboards.client_kb import inline_selector_offline
+from keyboards.client_kb import inline_selector_online
+from keyboards.client_kb import online_center_lst
