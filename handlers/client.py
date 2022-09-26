@@ -86,15 +86,15 @@ async def get_timetable(message: types.Message):
         await bot.send_document(message.chat.id, file)
 
     elif direction in online_btns_extra:
-        file = open('centers\online_centers\Расписание ОНЛАЙН занятий.pdf', 'rb')
+        file = open('centers\online_centers\Raspisainie_Online.pdf', 'rb')
         await bot.send_document(message.chat.id, file)
     
     elif direction == 'btn_oge':
-        file = open('centers\online_centers\Расписание ОГЭ.pdf', 'rb')
+        file = open('centers\online_centers\Raspisanie_OGE.pdf', 'rb')
         await bot.send_document(message.chat.id, file)
 
     elif direction == 'btn_ege':
-        file = open('centers\online_centers\Расписание ЕГЭ.pdf', 'rb')
+        file = open('centers\online_centers\Raspisanie_EGE.pdf', 'rb')
         await bot.send_document(message.chat.id, file)
 
 
