@@ -82,19 +82,19 @@ async def select_direction(callback: types.CallbackQuery):
 async def get_timetable(message: types.Message):
     
     if direction in offline_btns:
-        file = open(f'centers\offline_centers\{offline_files[direction]}.pdf', 'rb')
+        file = open(f'centers/offline_centers/{offline_files[direction]}.pdf', 'rb')
         await bot.send_document(message.chat.id, file)
 
     elif direction in online_btns_extra:
-        file = open('centers\online_centers\Raspisainie_Online.pdf', 'rb')
+        file = open('centers/online_centers/Raspisainie_Online.pdf', 'rb')
         await bot.send_document(message.chat.id, file)
     
     elif direction == 'btn_oge':
-        file = open('centers\online_centers\Raspisanie_OGE.pdf', 'rb')
+        file = open('centers/online_centers/Raspisanie_OGE.pdf', 'rb')
         await bot.send_document(message.chat.id, file)
 
     elif direction == 'btn_ege':
-        file = open('centers\online_centers\Raspisanie_EGE.pdf', 'rb')
+        file = open('centers/online_centers/Raspisanie_EGE.pdf', 'rb')
         await bot.send_document(message.chat.id, file)
 
 
